@@ -152,15 +152,20 @@ class Calculator {
 const calculator = new Calculator()
 
 function culc() {
-  const req = prompt('Введите математическое выражение','')
-  if (req) {
-    alert(calculator.calc(req))
+  const req = document.querySelector('input')?.value
+  const span = document.querySelector('span')
+  if (req && span !== null) {
+    span.innerText = String(calculator.calc(req))
   }
 }
 
 export default function Home() {
-  culc()
   return (
-    <button></button>
+    <div>
+      <input type="text" />
+      <button onClick={culc}>culc</button>
+      <span></span>
+    </div>
+    
   );
 }
