@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media (max-width: 800px) {
+  .sidebar__navigation {
+    display: none;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+code {
+  background-color: rgb(224, 224, 224);
+  border: 1px solid rgba(54, 54, 54, 0.623);
+}
+
+/* 
+body {
+  width: 200px;
+  overflow: hidden;
+} */
