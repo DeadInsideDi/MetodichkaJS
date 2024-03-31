@@ -162,9 +162,9 @@ function culc() {
 export default function Home() {
   return (
     <div>
-      <input type="text" />
-      <button onClick={culc}>culc</button>
-      <span></span>
+      <div><input type="text" /></div>
+      <div><button onClick={culc}>culc</button></div>
+      <div><span></span></div>
     </div>
     
   );
